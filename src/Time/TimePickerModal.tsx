@@ -4,7 +4,6 @@ import {
   StyleSheet,
   View,
   Text,
-  Animated,
   TouchableWithoutFeedback,
   KeyboardAvoidingView,
 } from 'react-native'
@@ -157,7 +156,7 @@ export function TimePickerModal({
             style={styles.keyboardView}
             behavior={'padding'}
           >
-            <Animated.View
+            <View
               style={[
                 styles.modalContent,
                 {
@@ -228,7 +227,7 @@ export function TimePickerModal({
                   {confirmLabel}
                 </Button>
               </View>
-            </Animated.View>
+            </View>
           </KeyboardAvoidingView>
         </View>
       </>
